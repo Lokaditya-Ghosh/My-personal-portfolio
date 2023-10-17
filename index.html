@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loka- developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,300;1,400;1,500&family=Space+Grotesk:wght@600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit&family=Onest&family=Pixelify+Sans&family=Teko&family=Tektur:wght@500&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit&family=Onest&family=Pixelify+Sans&family=Teko&family=Tektur:wght@500&family=Tilt+Neon&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(48, 13, 131);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(182, 152, 236);
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(118, 87, 201);
+            height: 1.2px;
+            margin: 80px 80px;
+        }
+
+
+
+        @keyframes main-img-animation {
+    0% {
+        transform: scale(1);
+        filter: grayscale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: grayscale(0);
+        box-shadow: 3px 3px 10px black;
+    }
+
+    100% {
+        transform: scale(1);
+        filter: grayscale(1);
+    }
+}
+
+
+
+
+
+
+        .left {
+            font-size: 1.5rem;
+            padding: 200px;
+            font-family: 'Boogaloo', cursive;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin-left: 80px;
+            height: 80vh;
+
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 100px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: aliceblue;
+            margin: 0 200px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 1.8rem;
+            margin: 70px 0;
+
+        }
+
+        .leftSection .button {
+            background: rgb(0 82 90);
+            padding: 10px;
+            color: aliceblue;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 8px;
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 19px;
+
+        }
+
+        .leftSection .button:hover {
+            box-shadow: 0px 9px 15px 5px rgb(109 230 230 / 24%), 0 17px 18px 8px rgba(0, 0, 0, 0.19);
+        }
+
+        .leftSection .button {
+            padding: 23px;
+        }
+
+        .rightSection img {
+            width: 64%;
+            margin: 16px;
+            border-radius: 8%;
+            filter: opacity(50);
+           
+        }
+       
+
+
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Lok's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</li></a>
+                    <li><a href="">about</li></a>
+                    <li><a href="">services</li></a>
+                    <li><a href="">Projects</li></a>
+                    <li><a href="">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <p>
+                    Hi, My name is <span class="purple">Lokaditya </span>
+                <div>and I am a</div>
+                </p>
+                <!-- <br> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Loka_CV.pdf" download="Loka_CV.pdf"> <button class="button">Download Resume</button></a>
+
+                    <button class="button">Hire Me</button>
+
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="hero.png" alt="">
+
+            </div>
+
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="HTML.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class=" vertical-desc">
+                        Experienced HTML developer proficient in creating semantic, responsive, and accessible web
+                        pages. Skilled in HTML5, CSS, and JavaScript to craft engaging and user-friendly online
+                        experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="SQL.png" alt="">
+                    <div class="vertical-title">
+                        SQL Developer
+                    </div>
+                    <div class=" vertical-desc">
+                        As a beginner SQL developer, I'm eager to learn and contribute. My foundational knowledge in SQL
+                        includes data retrieval, management, and simple queries, with a commitment to growth.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="CSS.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class=" vertical-desc">
+                        Dedicated CSS developer with expertise in crafting stunning, responsive, and visually appealing
+                        web designs. Proficient in CSS3, animations, and layout techniques to enhance user experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="C++.png" alt="">
+                    <div class="vertical-title">
+                        C++ Developer
+                    </div>
+                    <div class=" vertical-desc">
+                        As a C++ developer, I'm enthusiastic about learning and applying C++ to create
+                        efficient, reliable software. Eager to grow and contribute to innovative projects.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' web developer', ' graphic designer', ' c++ programmer', ' sql programmer'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
